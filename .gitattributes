@@ -1,0 +1,8 @@
+# 改行をそろえる（Windows と Mac で食い違わないように）
+* text=auto eol=lf
+
+# 画像・音は文字として扱わない
+*.png binary
+*.jpg binary
+*.wav binary
+*.ogg binary
