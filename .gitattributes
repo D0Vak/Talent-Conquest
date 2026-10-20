@@ -1,4 +1,4 @@
-# 改行をそろえる（Windows と Mac で食い違わないように）
+# Normalize EOL for all files that Git considers text files.
 * text=auto eol=lf
 
 # 画像・音は文字として扱わない
