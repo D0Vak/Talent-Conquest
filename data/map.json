@@ -1,0 +1,2318 @@
+{
+  "pos_scale": [
+    960,
+    720
+  ],
+  "nations": {
+    "player": {
+      "name": "オーレハイム王国",
+      "color": [
+        60,
+        140,
+        255
+      ]
+    },
+    "river": {
+      "name": "ズィウ河国",
+      "color": [
+        60,
+        200,
+        200
+      ]
+    },
+    "marsh": {
+      "name": "ベソル=レ=オズモ国",
+      "color": [
+        120,
+        160,
+        60
+      ]
+    },
+    "central": {
+      "name": "リーシュタット王国",
+      "color": [
+        240,
+        200,
+        40
+      ]
+    },
+    "empire": {
+      "name": "シュバイツハイム帝国",
+      "color": [
+        210,
+        40,
+        40
+      ]
+    },
+    "coalition": {
+      "name": "シグムンド民族連合",
+      "color": [
+        170,
+        90,
+        220
+      ]
+    },
+    "sea": {
+      "name": "アーデル公国",
+      "color": [
+        40,
+        80,
+        200
+      ]
+    },
+    "north": {
+      "name": "北ダーズ独立勢力",
+      "color": [
+        240,
+        240,
+        240
+      ]
+    },
+    "neutral": {
+      "name": "中立自治体",
+      "color": [
+        140,
+        140,
+        140
+      ]
+    }
+  },
+  "nodes": {
+    "nw_castle": {
+      "name": "オーレハイム城",
+      "pos": [
+        68,
+        60
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "player"
+    },
+    "west_village": {
+      "name": "中央西の城外れの集落",
+      "pos": [
+        105,
+        316
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "west_castle": {
+      "name": "中央西の城",
+      "pos": [
+        201,
+        360
+      ],
+      "terrain": "川",
+      "castle": true,
+      "owner": "river"
+    },
+    "small_village": {
+      "name": "小さな集落",
+      "pos": [
+        137,
+        346
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "marsh": {
+      "name": "湿地帯",
+      "pos": [
+        146,
+        526
+      ],
+      "terrain": "湿地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "marsh_village": {
+      "name": "湿地帯奥の小さな集落",
+      "pos": [
+        33,
+        483
+      ],
+      "terrain": "湿地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "marsh_castle": {
+      "name": "西の湿地帯の近くの城",
+      "pos": [
+        250,
+        496
+      ],
+      "terrain": "湿地",
+      "castle": true,
+      "owner": "marsh"
+    },
+    "valley_village": {
+      "name": "湿地と湖と山に囲まれた集落",
+      "pos": [
+        277,
+        555
+      ],
+      "terrain": "山",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "central_city": {
+      "name": "ファルンテルン都市",
+      "pos": [
+        370,
+        273
+      ],
+      "terrain": "盆地",
+      "castle": true,
+      "owner": "central"
+    },
+    "quarry_fort": {
+      "name": "レグザ要塞",
+      "pos": [
+        467,
+        479
+      ],
+      "terrain": "山",
+      "castle": true,
+      "owner": "central"
+    },
+    "lake_castle": {
+      "name": "アーデルハイド城",
+      "pos": [
+        545,
+        645
+      ],
+      "terrain": "湖",
+      "castle": true,
+      "owner": "sea"
+    },
+    "lake_village": {
+      "name": "アーデルベルン要塞",
+      "pos": [
+        515,
+        617
+      ],
+      "terrain": "湖",
+      "castle": false,
+      "owner": "sea"
+    },
+    "north_pass": {
+      "name": "テグレトール要塞",
+      "pos": [
+        546,
+        119
+      ],
+      "terrain": "山",
+      "castle": true,
+      "owner": "empire"
+    },
+    "middle_pass": {
+      "name": "ベグラン要塞",
+      "pos": [
+        604,
+        303
+      ],
+      "terrain": "山",
+      "castle": true,
+      "owner": "empire"
+    },
+    "north_castle": {
+      "name": "最北の城",
+      "pos": [
+        594,
+        52
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "north"
+    },
+    "north_village": {
+      "name": "北の小さな集落",
+      "pos": [
+        603,
+        93
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "farm_castle": {
+      "name": "田園に囲まれた城",
+      "pos": [
+        608,
+        138
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "plateau_castle": {
+      "name": "大陸棚の下の城",
+      "pos": [
+        713,
+        173
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "north"
+    },
+    "plateau_lake": {
+      "name": "大陸棚の湖",
+      "pos": [
+        762,
+        68
+      ],
+      "terrain": "山",
+      "castle": false,
+      "owner": "north"
+    },
+    "water_city": {
+      "name": "ルフレーヴ滝都市",
+      "pos": [
+        892,
+        143
+      ],
+      "terrain": "森",
+      "castle": true,
+      "owner": "north"
+    },
+    "east_castle2": {
+      "name": "城２",
+      "pos": [
+        599,
+        200
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "field_village": {
+      "name": "小さな田畑のある集落",
+      "pos": [
+        603,
+        243
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "east_castle1": {
+      "name": "城１",
+      "pos": [
+        696,
+        281
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "east_capital": {
+      "name": "ヴェルゲングリューン大都市",
+      "pos": [
+        854,
+        283
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "capital_village": {
+      "name": "大都市外れの集落",
+      "pos": [
+        765,
+        365
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "big_farm": {
+      "name": "大農場",
+      "pos": [
+        878,
+        375
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "plain_castle4": {
+      "name": "東の大平野の城４",
+      "pos": [
+        606,
+        372
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "plain_castle3": {
+      "name": "東の大平野の城３",
+      "pos": [
+        583,
+        407
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "farm_village": {
+      "name": "大きな田園のある集落",
+      "pos": [
+        682,
+        423
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "plain_castle2": {
+      "name": "東の大平野の城２",
+      "pos": [
+        593,
+        452
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "plain_castle1": {
+      "name": "東の大平野の城１",
+      "pos": [
+        618,
+        500
+      ],
+      "terrain": "平地",
+      "castle": true,
+      "owner": "empire"
+    },
+    "big_mine": {
+      "name": "湿地帯近くの大きな鉱山",
+      "pos": [
+        759,
+        525
+      ],
+      "terrain": "山",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "east_marsh": {
+      "name": "大都市の南の湿地帯",
+      "pos": [
+        829,
+        505
+      ],
+      "terrain": "湿地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "mine_village": {
+      "name": "湖の東の鉱山集落",
+      "pos": [
+        700,
+        601
+      ],
+      "terrain": "山",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node35": {
+      "name": "未定35",
+      "pos": [
+        357,
+        24
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node36": {
+      "name": "未定36",
+      "pos": [
+        231,
+        199
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node37": {
+      "name": "未定37",
+      "pos": [
+        221,
+        233
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node38": {
+      "name": "未定38",
+      "pos": [
+        289,
+        397
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node39": {
+      "name": "未定39",
+      "pos": [
+        502,
+        281
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node40": {
+      "name": "未定40",
+      "pos": [
+        421,
+        166
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node41": {
+      "name": "未定41",
+      "pos": [
+        457,
+        373
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node43": {
+      "name": "未定43",
+      "pos": [
+        143,
+        424
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node44": {
+      "name": "未定44",
+      "pos": [
+        297,
+        125
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node45": {
+      "name": "未定45",
+      "pos": [
+        462,
+        116
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node46": {
+      "name": "未定46",
+      "pos": [
+        258,
+        70
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node47": {
+      "name": "未定47",
+      "pos": [
+        475,
+        205
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node48": {
+      "name": "未定48",
+      "pos": [
+        136,
+        51
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node49": {
+      "name": "未定49",
+      "pos": [
+        80,
+        507
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node50": {
+      "name": "未定50",
+      "pos": [
+        756,
+        624
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node51": {
+      "name": "未定51",
+      "pos": [
+        887,
+        443
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node52": {
+      "name": "未定52",
+      "pos": [
+        757,
+        420
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node53": {
+      "name": "未定53",
+      "pos": [
+        123,
+        123
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node54": {
+      "name": "未定54",
+      "pos": [
+        450,
+        48
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node55": {
+      "name": "未定55",
+      "pos": [
+        589,
+        711
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "sea"
+    },
+    "node56": {
+      "name": "未定56",
+      "pos": [
+        914,
+        611
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node57": {
+      "name": "未定57",
+      "pos": [
+        857,
+        659
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node58": {
+      "name": "未定58",
+      "pos": [
+        414,
+        602
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "sea"
+    },
+    "node59": {
+      "name": "未定59",
+      "pos": [
+        467,
+        557
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "sea"
+    },
+    "node60": {
+      "name": "未定60",
+      "pos": [
+        605,
+        592
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "sea"
+    },
+    "node61": {
+      "name": "未定61",
+      "pos": [
+        430,
+        522
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node62": {
+      "name": "未定62",
+      "pos": [
+        771,
+        207
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node63": {
+      "name": "未定63",
+      "pos": [
+        417,
+        106
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node64": {
+      "name": "未定64",
+      "pos": [
+        334,
+        113
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node65": {
+      "name": "未定65",
+      "pos": [
+        295,
+        63
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node66": {
+      "name": "未定66",
+      "pos": [
+        268,
+        174
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node67": {
+      "name": "未定67",
+      "pos": [
+        230,
+        155
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node68": {
+      "name": "未定68",
+      "pos": [
+        172,
+        190
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node69": {
+      "name": "未定69",
+      "pos": [
+        123,
+        165
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node70": {
+      "name": "未定70",
+      "pos": [
+        102,
+        223
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "player"
+    },
+    "node71": {
+      "name": "未定71",
+      "pos": [
+        173,
+        250
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node72": {
+      "name": "未定72",
+      "pos": [
+        112,
+        298
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node73": {
+      "name": "未定73",
+      "pos": [
+        130,
+        295
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node74": {
+      "name": "未定74",
+      "pos": [
+        78,
+        320
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node75": {
+      "name": "未定75",
+      "pos": [
+        205,
+        207
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node76": {
+      "name": "未定76",
+      "pos": [
+        238,
+        339
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node77": {
+      "name": "未定77",
+      "pos": [
+        237,
+        359
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node78": {
+      "name": "未定78",
+      "pos": [
+        324,
+        355
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node79": {
+      "name": "未定79",
+      "pos": [
+        281,
+        312
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node80": {
+      "name": "未定80",
+      "pos": [
+        245,
+        274
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node81": {
+      "name": "未定81",
+      "pos": [
+        384,
+        398
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node82": {
+      "name": "未定82",
+      "pos": [
+        449,
+        427
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node83": {
+      "name": "未定83",
+      "pos": [
+        401,
+        454
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node84": {
+      "name": "未定84",
+      "pos": [
+        438,
+        471
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node85": {
+      "name": "未定85",
+      "pos": [
+        201,
+        471
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    },
+    "node86": {
+      "name": "未定86",
+      "pos": [
+        268,
+        433
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node87": {
+      "name": "未定87",
+      "pos": [
+        290,
+        527
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node88": {
+      "name": "未定88",
+      "pos": [
+        252,
+        571
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node89": {
+      "name": "未定89",
+      "pos": [
+        191,
+        606
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node90": {
+      "name": "未定90",
+      "pos": [
+        333,
+        629
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "marsh"
+    },
+    "node91": {
+      "name": "未定91",
+      "pos": [
+        559,
+        483
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node92": {
+      "name": "未定92",
+      "pos": [
+        813,
+        571
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node93": {
+      "name": "未定93",
+      "pos": [
+        741,
+        565
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "coalition"
+    },
+    "node94": {
+      "name": "未定94",
+      "pos": [
+        688,
+        530
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node95": {
+      "name": "未定95",
+      "pos": [
+        668,
+        496
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node96": {
+      "name": "未定96",
+      "pos": [
+        713,
+        452
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node97": {
+      "name": "未定97",
+      "pos": [
+        792,
+        454
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node98": {
+      "name": "未定98",
+      "pos": [
+        749,
+        45
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "north"
+    },
+    "node99": {
+      "name": "未定99",
+      "pos": [
+        601,
+        18
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "north"
+    },
+    "node100": {
+      "name": "未定100",
+      "pos": [
+        612,
+        69
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "north"
+    },
+    "node101": {
+      "name": "未定101",
+      "pos": [
+        646,
+        95
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node102": {
+      "name": "未定102",
+      "pos": [
+        681,
+        69
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node103": {
+      "name": "未定103",
+      "pos": [
+        810,
+        71
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "north"
+    },
+    "node104": {
+      "name": "未定104",
+      "pos": [
+        873,
+        78
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "north"
+    },
+    "node105": {
+      "name": "未定105",
+      "pos": [
+        709,
+        137
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node106": {
+      "name": "未定106",
+      "pos": [
+        779,
+        176
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "north"
+    },
+    "node107": {
+      "name": "未定107",
+      "pos": [
+        830,
+        211
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node108": {
+      "name": "未定108",
+      "pos": [
+        886,
+        187
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node109": {
+      "name": "未定109",
+      "pos": [
+        891,
+        331
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node110": {
+      "name": "未定110",
+      "pos": [
+        829,
+        384
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node111": {
+      "name": "未定111",
+      "pos": [
+        859,
+        429
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node112": {
+      "name": "未定112",
+      "pos": [
+        646,
+        298
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node113": {
+      "name": "未定113",
+      "pos": [
+        744,
+        255
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node114": {
+      "name": "未定114",
+      "pos": [
+        667,
+        223
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node115": {
+      "name": "未定115",
+      "pos": [
+        695,
+        236
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node116": {
+      "name": "未定116",
+      "pos": [
+        768,
+        293
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node117": {
+      "name": "未定117",
+      "pos": [
+        799,
+        337
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node118": {
+      "name": "未定118",
+      "pos": [
+        704,
+        354
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node119": {
+      "name": "未定119",
+      "pos": [
+        708,
+        406
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node120": {
+      "name": "未定120",
+      "pos": [
+        737,
+        386
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node121": {
+      "name": "未定121",
+      "pos": [
+        660,
+        379
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "empire"
+    },
+    "node122": {
+      "name": "未定122",
+      "pos": [
+        432,
+        191
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node123": {
+      "name": "未定123",
+      "pos": [
+        368,
+        181
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node124": {
+      "name": "未定124",
+      "pos": [
+        458,
+        284
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node125": {
+      "name": "未定125",
+      "pos": [
+        430,
+        329
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "central"
+    },
+    "node126": {
+      "name": "未定126",
+      "pos": [
+        184,
+        334
+      ],
+      "terrain": "平地",
+      "castle": false,
+      "owner": "river"
+    }
+  },
+  "roads": [
+    [
+      "field_village",
+      "middle_pass"
+    ],
+    [
+      "east_castle2",
+      "field_village"
+    ],
+    [
+      "farm_castle",
+      "east_castle2"
+    ],
+    [
+      "north_pass",
+      "farm_castle"
+    ],
+    [
+      "north_village",
+      "farm_castle"
+    ],
+    [
+      "north_castle",
+      "north_village"
+    ],
+    [
+      "north_pass",
+      "north_village"
+    ],
+    [
+      "plateau_castle",
+      "farm_castle"
+    ],
+    [
+      "plain_castle4",
+      "middle_pass"
+    ],
+    [
+      "plain_castle3",
+      "plain_castle4"
+    ],
+    [
+      "plain_castle3",
+      "plain_castle2"
+    ],
+    [
+      "plain_castle2",
+      "farm_village"
+    ],
+    [
+      "big_farm",
+      "east_capital"
+    ],
+    [
+      "big_mine",
+      "east_marsh"
+    ],
+    [
+      "mine_village",
+      "plain_castle1"
+    ],
+    [
+      "plain_castle2",
+      "plain_castle1"
+    ],
+    [
+      "farm_village",
+      "plain_castle1"
+    ],
+    [
+      "lake_village",
+      "lake_castle"
+    ],
+    [
+      "marsh_castle",
+      "quarry_fort"
+    ],
+    [
+      "west_village",
+      "small_village"
+    ],
+    [
+      "small_village",
+      "west_castle"
+    ],
+    [
+      "marsh",
+      "marsh_castle"
+    ],
+    [
+      "marsh_castle",
+      "valley_village"
+    ],
+    [
+      "plain_castle3",
+      "farm_village"
+    ],
+    [
+      "plain_castle4",
+      "farm_village"
+    ],
+    [
+      "valley_village",
+      "marsh"
+    ],
+    [
+      "east_castle2",
+      "plateau_castle"
+    ],
+    [
+      "field_village",
+      "east_castle1"
+    ],
+    [
+      "node39",
+      "middle_pass"
+    ],
+    [
+      "node39",
+      "node41"
+    ],
+    [
+      "node36",
+      "node37"
+    ],
+    [
+      "small_village",
+      "node43"
+    ],
+    [
+      "node43",
+      "marsh"
+    ],
+    [
+      "west_castle",
+      "node43"
+    ],
+    [
+      "north_pass",
+      "node45"
+    ],
+    [
+      "node35",
+      "node45"
+    ],
+    [
+      "node46",
+      "node44"
+    ],
+    [
+      "node45",
+      "node40"
+    ],
+    [
+      "node47",
+      "node39"
+    ],
+    [
+      "node48",
+      "nw_castle"
+    ],
+    [
+      "node49",
+      "marsh_village"
+    ],
+    [
+      "node49",
+      "marsh"
+    ],
+    [
+      "node43",
+      "node49"
+    ],
+    [
+      "mine_village",
+      "node50"
+    ],
+    [
+      "big_farm",
+      "node51"
+    ],
+    [
+      "east_marsh",
+      "node51"
+    ],
+    [
+      "capital_village",
+      "node52"
+    ],
+    [
+      "node46",
+      "node53"
+    ],
+    [
+      "nw_castle",
+      "node53"
+    ],
+    [
+      "node54",
+      "node45"
+    ],
+    [
+      "node35",
+      "node54"
+    ],
+    [
+      "lake_castle",
+      "node55"
+    ],
+    [
+      "mine_village",
+      "node55"
+    ],
+    [
+      "node56",
+      "node51"
+    ],
+    [
+      "east_marsh",
+      "node56"
+    ],
+    [
+      "node56",
+      "node57"
+    ],
+    [
+      "node57",
+      "node50"
+    ],
+    [
+      "quarry_fort",
+      "node59"
+    ],
+    [
+      "node59",
+      "lake_village"
+    ],
+    [
+      "node58",
+      "node59"
+    ],
+    [
+      "node58",
+      "lake_village"
+    ],
+    [
+      "node60",
+      "lake_village"
+    ],
+    [
+      "node60",
+      "lake_castle"
+    ],
+    [
+      "node60",
+      "plain_castle1"
+    ],
+    [
+      "node60",
+      "mine_village"
+    ],
+    [
+      "valley_village",
+      "node61"
+    ],
+    [
+      "quarry_fort",
+      "node61"
+    ],
+    [
+      "node61",
+      "node59"
+    ],
+    [
+      "node62",
+      "east_capital"
+    ],
+    [
+      "plateau_castle",
+      "node62"
+    ],
+    [
+      "east_castle1",
+      "plain_castle4"
+    ],
+    [
+      "node63",
+      "node45"
+    ],
+    [
+      "node63",
+      "node64"
+    ],
+    [
+      "node35",
+      "node65"
+    ],
+    [
+      "node65",
+      "node46"
+    ],
+    [
+      "node64",
+      "node44"
+    ],
+    [
+      "node74",
+      "west_village"
+    ],
+    [
+      "node72",
+      "west_village"
+    ],
+    [
+      "node73",
+      "node72"
+    ],
+    [
+      "west_village",
+      "node73"
+    ],
+    [
+      "node74",
+      "node70"
+    ],
+    [
+      "node71",
+      "node73"
+    ],
+    [
+      "node70",
+      "node71"
+    ],
+    [
+      "node68",
+      "node71"
+    ],
+    [
+      "node69",
+      "node68"
+    ],
+    [
+      "node53",
+      "node69"
+    ],
+    [
+      "node69",
+      "node70"
+    ],
+    [
+      "node36",
+      "node75"
+    ],
+    [
+      "node75",
+      "node37"
+    ],
+    [
+      "node68",
+      "node75"
+    ],
+    [
+      "node75",
+      "node71"
+    ],
+    [
+      "node44",
+      "node66"
+    ],
+    [
+      "node67",
+      "node66"
+    ],
+    [
+      "node53",
+      "node67"
+    ],
+    [
+      "node67",
+      "node36"
+    ],
+    [
+      "node36",
+      "node66"
+    ],
+    [
+      "node37",
+      "node80"
+    ],
+    [
+      "node80",
+      "node79"
+    ],
+    [
+      "node79",
+      "node78"
+    ],
+    [
+      "node81",
+      "node41"
+    ],
+    [
+      "node78",
+      "node81"
+    ],
+    [
+      "node41",
+      "node82"
+    ],
+    [
+      "node82",
+      "node84"
+    ],
+    [
+      "node84",
+      "quarry_fort"
+    ],
+    [
+      "node83",
+      "node84"
+    ],
+    [
+      "node82",
+      "node83"
+    ],
+    [
+      "node81",
+      "node83"
+    ],
+    [
+      "node38",
+      "node81"
+    ],
+    [
+      "node78",
+      "node38"
+    ],
+    [
+      "node79",
+      "node76"
+    ],
+    [
+      "node77",
+      "node76"
+    ],
+    [
+      "west_castle",
+      "node77"
+    ],
+    [
+      "node77",
+      "node78"
+    ],
+    [
+      "node38",
+      "node77"
+    ],
+    [
+      "node38",
+      "node86"
+    ],
+    [
+      "node85",
+      "node86"
+    ],
+    [
+      "node86",
+      "marsh_castle"
+    ],
+    [
+      "node85",
+      "marsh_castle"
+    ],
+    [
+      "marsh",
+      "node85"
+    ],
+    [
+      "node43",
+      "node85"
+    ],
+    [
+      "marsh_castle",
+      "node87"
+    ],
+    [
+      "node87",
+      "valley_village"
+    ],
+    [
+      "node58",
+      "node90"
+    ],
+    [
+      "valley_village",
+      "node90"
+    ],
+    [
+      "node88",
+      "valley_village"
+    ],
+    [
+      "node89",
+      "node88"
+    ],
+    [
+      "marsh",
+      "node89"
+    ],
+    [
+      "plain_castle2",
+      "node91"
+    ],
+    [
+      "node91",
+      "quarry_fort"
+    ],
+    [
+      "east_marsh",
+      "node92"
+    ],
+    [
+      "node92",
+      "node56"
+    ],
+    [
+      "big_mine",
+      "node92"
+    ],
+    [
+      "node92",
+      "node50"
+    ],
+    [
+      "big_mine",
+      "node93"
+    ],
+    [
+      "node93",
+      "node50"
+    ],
+    [
+      "node93",
+      "mine_village"
+    ],
+    [
+      "node94",
+      "plain_castle1"
+    ],
+    [
+      "node94",
+      "big_mine"
+    ],
+    [
+      "node95",
+      "node94"
+    ],
+    [
+      "node95",
+      "farm_village"
+    ],
+    [
+      "middle_pass",
+      "node112"
+    ],
+    [
+      "node112",
+      "east_castle1"
+    ],
+    [
+      "east_castle1",
+      "node118"
+    ],
+    [
+      "node62",
+      "node107"
+    ],
+    [
+      "node103",
+      "plateau_lake"
+    ],
+    [
+      "node98",
+      "plateau_lake"
+    ],
+    [
+      "node102",
+      "node98"
+    ],
+    [
+      "node103",
+      "node104"
+    ],
+    [
+      "node104",
+      "water_city"
+    ],
+    [
+      "node108",
+      "water_city"
+    ],
+    [
+      "node108",
+      "node106"
+    ],
+    [
+      "node108",
+      "east_capital"
+    ],
+    [
+      "node107",
+      "node108"
+    ],
+    [
+      "node106",
+      "node62"
+    ],
+    [
+      "plateau_castle",
+      "node106"
+    ],
+    [
+      "node105",
+      "plateau_castle"
+    ],
+    [
+      "node101",
+      "node105"
+    ],
+    [
+      "node102",
+      "node101"
+    ],
+    [
+      "node121",
+      "farm_village"
+    ],
+    [
+      "node119",
+      "node96"
+    ],
+    [
+      "node96",
+      "node95"
+    ],
+    [
+      "farm_village",
+      "node96"
+    ],
+    [
+      "node119",
+      "farm_village"
+    ],
+    [
+      "node121",
+      "node119"
+    ],
+    [
+      "plain_castle4",
+      "node121"
+    ],
+    [
+      "node118",
+      "node121"
+    ],
+    [
+      "node112",
+      "node121"
+    ],
+    [
+      "middle_pass",
+      "node118"
+    ],
+    [
+      "node118",
+      "node120"
+    ],
+    [
+      "node120",
+      "node119"
+    ],
+    [
+      "node120",
+      "node52"
+    ],
+    [
+      "capital_village",
+      "node120"
+    ],
+    [
+      "node118",
+      "capital_village"
+    ],
+    [
+      "node116",
+      "node118"
+    ],
+    [
+      "node116",
+      "node117"
+    ],
+    [
+      "node113",
+      "node116"
+    ],
+    [
+      "node115",
+      "node113"
+    ],
+    [
+      "node114",
+      "node115"
+    ],
+    [
+      "east_castle2",
+      "node114"
+    ],
+    [
+      "node114",
+      "field_village"
+    ],
+    [
+      "node114",
+      "east_castle1"
+    ],
+    [
+      "node115",
+      "east_castle1"
+    ],
+    [
+      "east_castle1",
+      "node113"
+    ],
+    [
+      "node116",
+      "east_castle1"
+    ],
+    [
+      "capital_village",
+      "east_castle1"
+    ],
+    [
+      "node117",
+      "capital_village"
+    ],
+    [
+      "capital_village",
+      "node110"
+    ],
+    [
+      "node117",
+      "node110"
+    ],
+    [
+      "node117",
+      "east_capital"
+    ],
+    [
+      "node113",
+      "east_capital"
+    ],
+    [
+      "node116",
+      "east_capital"
+    ],
+    [
+      "node107",
+      "east_capital"
+    ],
+    [
+      "node109",
+      "east_capital"
+    ],
+    [
+      "big_farm",
+      "node109"
+    ],
+    [
+      "node110",
+      "big_farm"
+    ],
+    [
+      "node111",
+      "big_farm"
+    ],
+    [
+      "node111",
+      "node51"
+    ],
+    [
+      "node110",
+      "node111"
+    ],
+    [
+      "node111",
+      "node52"
+    ],
+    [
+      "node97",
+      "east_marsh"
+    ],
+    [
+      "node52",
+      "node97"
+    ],
+    [
+      "node97",
+      "node96"
+    ],
+    [
+      "node111",
+      "node97"
+    ],
+    [
+      "big_mine",
+      "node96"
+    ],
+    [
+      "node97",
+      "big_mine"
+    ],
+    [
+      "node97",
+      "node51"
+    ],
+    [
+      "node95",
+      "plain_castle1"
+    ],
+    [
+      "node94",
+      "mine_village"
+    ],
+    [
+      "node94",
+      "node93"
+    ],
+    [
+      "node87",
+      "node83"
+    ],
+    [
+      "node60",
+      "node59"
+    ],
+    [
+      "lake_castle",
+      "node58"
+    ],
+    [
+      "node49",
+      "node89"
+    ],
+    [
+      "node99",
+      "north_castle"
+    ],
+    [
+      "north_castle",
+      "node100"
+    ],
+    [
+      "node100",
+      "north_village"
+    ],
+    [
+      "north_village",
+      "node101"
+    ],
+    [
+      "node105",
+      "farm_castle"
+    ],
+    [
+      "plateau_castle",
+      "node115"
+    ],
+    [
+      "plateau_castle",
+      "node114"
+    ],
+    [
+      "plateau_castle",
+      "node113"
+    ],
+    [
+      "node62",
+      "node113"
+    ],
+    [
+      "node106",
+      "water_city"
+    ],
+    [
+      "node105",
+      "node106"
+    ],
+    [
+      "node107",
+      "node106"
+    ],
+    [
+      "node107",
+      "node113"
+    ],
+    [
+      "node107",
+      "node116"
+    ],
+    [
+      "big_farm",
+      "node117"
+    ],
+    [
+      "node116",
+      "capital_village"
+    ],
+    [
+      "node117",
+      "node112"
+    ],
+    [
+      "east_castle1",
+      "node117"
+    ],
+    [
+      "node95",
+      "plain_castle2"
+    ],
+    [
+      "node95",
+      "plain_castle3"
+    ],
+    [
+      "plain_castle4",
+      "node95"
+    ],
+    [
+      "node40",
+      "node122"
+    ],
+    [
+      "node47",
+      "node40"
+    ],
+    [
+      "node122",
+      "central_city"
+    ],
+    [
+      "node40",
+      "node123"
+    ],
+    [
+      "node123",
+      "central_city"
+    ],
+    [
+      "node124",
+      "node39"
+    ],
+    [
+      "central_city",
+      "node124"
+    ],
+    [
+      "node125",
+      "central_city"
+    ],
+    [
+      "node125",
+      "node41"
+    ],
+    [
+      "node126",
+      "west_castle"
+    ],
+    [
+      "node71",
+      "node126"
+    ],
+    [
+      "node71",
+      "west_castle"
+    ]
+  ]
+}
