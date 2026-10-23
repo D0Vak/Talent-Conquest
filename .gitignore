@@ -1,8 +1,39 @@
-# Godot 4+ specific ignores
-.godot/
-/android/
+# Unity が自動で作り直すもの（大きいので送らない）
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# VSCode・Visual Studio が作るもの
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
 
 # 書き出したゲーム（配布用のファイル）
-/build/
+*.apk
+*.aab
+*.unitypackage
 *.exe
-*.pck
+crashlytics-buildid.txt
+sysinfo.txt
+
+# OS が作るもの
+.DS_Store
+Thumbs.db

@@ -1,8 +1,14 @@
-# Normalize EOL for all files that Git considers text files.
+# 文字のファイルは改行を LF にそろえる（2台のPCで食い違わないように）
 * text=auto eol=lf
 
-# 画像・音は文字として扱わない
+# 画像・音・3Dモデルは文字として扱わない
 *.png binary
 *.jpg binary
+*.psd binary
+*.aseprite binary
 *.wav binary
 *.ogg binary
+*.mp3 binary
+*.fbx binary
+*.ttf binary
+*.otf binary
