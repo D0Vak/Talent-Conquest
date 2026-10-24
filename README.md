@@ -7,7 +7,7 @@
   - [docs/TODO.md](docs/TODO.md)：テストプレイの課題
   - [docs/ART_SPEC.md](docs/ART_SPEC.md)：武将のドット絵の素材の仕様書
 - Python 版は答え合わせ用で、もう変えない。数値の名前やファイルの役割は Python 版の README.md にある
-- `tools/export_data.py`：Python 版の地図・地形・名前を JSON にして `data/` に書き出す（2つのリポジトリが同じフォルダに並んでいる前提）
+- `tools/export_data.py`：Python 版の地図・地形・名前を JSON にして `Assets/Data/` に書き出す（2つのリポジトリが同じフォルダに並んでいる前提）
 - Unity は 6.3 LTS（6000.3.27f1）。両方のPCで同じ版にする（版が違うとプロジェクトのファイルが書き換わって食い違う）
 - 作業の初めに `git pull`、終わりに `git push`
 - 2026-10-23 に Godot から Unity に切り替えた（もう1つの作品も Unity で作るので、覚えるのを Unity と C# にそろえる）
@@ -65,5 +65,5 @@ Python 版は答え合わせ用に残し、まず同じ動きを再現する。�
 
 ### 次の一歩
 
-- できた：tools/export_data.py で、map_data.py・grid_data.py・names.py を JSON にして `data/` に書き出す（国9・拠点125・道246、90×67マス、名前213）
+- できた：tools/export_data.py で、map_data.py・grid_data.py・names.py を JSON にして `Assets/Data/` に書き出す（Assets/Data/。国9・拠点125・道246、90×67マス、名前213）
 - 次：Unity のプロジェクトを作り、C# でこの JSON を読む

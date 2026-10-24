@@ -1,4 +1,4 @@
-# 道具：Python 版（Talent-Conquest-Game）のデータを JSON に書き出して、この Unity 版の data/ に入れる
+# 道具：Python 版（Talent-Conquest-Game）のデータを JSON に書き出して、この Unity 版の Assets/Data/ に入れる
 #   python tools/export_data.py
 #   2つのリポジトリが同じフォルダに並んでいる前提（…/Talent-Conquest-Game と …/Talent-Conquest）
 #   Python 版の map_editor.py・terrain_editor.py で地図や地形を直したら、もう一度これを実行する
@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent          # この Unity 版のフォルダ
 SRC = ROOT.parent / "Talent-Conquest-Game"             # 隣の Python 版
-OUT = ROOT / "data"
+OUT = ROOT / "Assets" / "Data"                         # Unity は Assets の中しか素材として読まない
 
 if not SRC.exists():
     raise SystemExit(f"Python 版のフォルダが見つかりません: {SRC}")
