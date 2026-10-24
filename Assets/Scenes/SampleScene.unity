@@ -389,9 +389,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MapView
   mapJson: {fileID: 4900000, guid: 1a956aaa95e745e4d80256f665566004, type: 3}
   circle: {fileID: -2413806693520163455, guid: f270295aed52ce44882c0db48345ad23, type: 3}
+  lineMaterial: {fileID: 2100000, guid: 4f135964aa37e674c94cbb397e29843f, type: 2}
   castleSize: 14
   townSize: 8
   outline: 3
+  roadWidth: 2.5
+  roadColor: {r: 0.25, g: 0.18, b: 0.1, a: 0.85}
   mapSize: {x: 1448, y: 1086}
 --- !u!4 &1427489639
 Transform:
