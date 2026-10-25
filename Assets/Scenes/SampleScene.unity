@@ -368,6 +368,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1427489639}
   - component: {fileID: 1427489638}
+  - component: {fileID: 1427489641}
+  - component: {fileID: 1427489640}
   m_Layer: 0
   m_Name: MapView
   m_TagString: Untagged
@@ -411,6 +413,43 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427489640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427489637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5222795f008b0034c8c2707be264368e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TerritoryView
+  terrainJson: {fileID: 4900000, guid: 754e09538c66ffa459118d76b1d74c29, type: 3}
+  pixelStep: 2
+  fillAlpha: 0.35
+  regionLineAlpha: 0.5
+  borderAlpha: 0.9
+  borderWidth: 2
+--- !u!114 &1427489641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427489637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8d4c28fb4ee97419d91d7581fb62ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UnitController
+  circle: {fileID: -2413806693520163455, guid: f270295aed52ce44882c0db48345ad23, type: 3}
+  clickRadius: 15
+  startNode: nw_castle
+  heroes:
+  - "\u30E9\u30A4\u30F3\u30CF\u30EB\u30C8"
+  - "\u30CF\u30A4\u30F3\u30EA\u30C3\u30D2"
+  - "\u30F4\u30A3\u30EB\u30D8\u30EB\u30E0"
 --- !u!1 &1540048262
 GameObject:
   m_ObjectHideFlags: 0

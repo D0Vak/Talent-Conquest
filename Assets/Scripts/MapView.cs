@@ -3,9 +3,11 @@ using UnityEngine;
 
 // map.json を読んで、道を線で引き、拠点を国の色の丸で置く（城は大きく、町は小さく）
 // シーンの空の物（MapView）に付けて使う
-// 重なりの順番（sortingOrder）：地図 0 → 道 1 → 丸のふち 2 → 丸 3 → コマ 5〜7（大きいほど手前）
+// 重なりの順番（sortingOrder）：地図 0 → 領地 1 → 道 2 → 丸のふち 3 → 丸 4 → コマ 5〜7（大きいほど手前）
 public class MapView : MonoBehaviour
 {
+    public event System.Action<string> OwnerChanged;   // 拠点の持ち主が変わったら、その拠点の呼び名を知らせる
+
     [SerializeField] TextAsset mapJson;                          // Assets/Data/map.json
     [SerializeField] Sprite circle;                              // 拠点の印にする丸
     [SerializeField] Material lineMaterial;                      // 道の線の塗り方
@@ -17,6 +19,7 @@ public class MapView : MonoBehaviour
     [SerializeField] Vector2 mapSize = new Vector2(1448, 1086);  // 地図の絵の大きさ
 
     public MapData Map { get; private set; }   // ほかのスクリプトからは読むだけ
+    public Vector2 MapSize => mapSize;
     public RoadGraph Roads { get; private set; }
 
     float scale;   // 拠点の位置の物差し → 地図の絵のピクセル（約1.51倍）
@@ -38,8 +41,8 @@ public class MapView : MonoBehaviour
         foreach (var pair in Map.Nodes)
         {
             float size = pair.Value.Castle ? castleSize : townSize;
-            MakeCircle(pair.Key + "_outline", NodePos(pair.Key), size + outline, Color.black, 2);
-            nodeCircles[pair.Key] = MakeCircle(pair.Key, NodePos(pair.Key), size, NationColor(pair.Value.Owner), 3);
+            MakeCircle(pair.Key + "_outline", NodePos(pair.Key), size + outline, Color.black, 3);
+            nodeCircles[pair.Key] = MakeCircle(pair.Key, NodePos(pair.Key), size, NationColor(pair.Value.Owner), 4);
         }
         Debug.Log($"道を {Map.Roads.Count} 本、拠点を {Map.Nodes.Count} か所置いた");
     }
@@ -74,6 +77,7 @@ public class MapView : MonoBehaviour
     {
         Map.Nodes[id].Owner = nation;
         nodeCircles[id].color = NationColor(nation);
+        OwnerChanged?.Invoke(id);   // 聞いている人（領地の塗り分けなど）に知らせる
     }
 
     public Color NationColor(string nation)
@@ -95,7 +99,7 @@ public class MapView : MonoBehaviour
         line.SetPosition(1, to);
         line.startWidth = line.endWidth = roadWidth;
         line.startColor = line.endColor = roadColor;
-        line.sortingOrder = 1;
+        line.sortingOrder = 2;
     }
 
     // 丸を1つ作って、この物の子として置く。order が大きいほど手前に描かれる
